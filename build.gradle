@@ -12,11 +12,12 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     implementation "com.squareup.retrofit2:retrofit:2.5.0"
     implementation "com.squareup.retrofit2:converter-gson:2.5.0"
     implementation "com.squareup.retrofit2:converter-scalars:2.5.0"
-    implementation 'ninja.sakib:BelleORM:v1.8'
+    implementation "org.mongodb:mongo-java-driver:3.10.2"
 }
 
 compileKotlin {

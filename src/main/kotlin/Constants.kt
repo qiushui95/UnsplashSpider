@@ -1,4 +1,4 @@
-import ninja.sakib.pultusorm.core.PultusORM
+import com.mongodb.MongoClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
@@ -10,4 +10,4 @@ private val retrofit = Retrofit.Builder().baseUrl("https://unsplash.com/napi/")
 
 val api = retrofit.create(UnsplashApi::class.java)
 
-val dbClient = PultusORM("unsplash.db")
+val dbClient = MongoClient("45.32.10.81", 27017)
